@@ -9,6 +9,7 @@
   5.1 Header
 6.0 Navigation
   6.1 Links
+  6.2 Menus
 14 Media Queries
   14.1 Phone-sized devices
   14.2 Tablets and up
@@ -771,6 +772,31 @@ a:active {
 
 
 /*--------------------------------------------------------------
+  6.2 Menus
+--------------------------------------------------------------*/
+/* Main site navigation (most code is within media queries) */
+.site-navigation {
+  border-top: none;
+}
+
+.site-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+
+.site-navigation .menu li {
+  margin: 0;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 1.5rem 1.5rem;
+  text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
 14 Media Queries
 --------------------------------------------------------------*/
 
@@ -779,6 +805,44 @@ a:active {
   14.1 Phone-sized devices
 --------------------------------------------------------------*/
 @media only screen and (max-width: 640px) {
+
+    .site-branding {
+        display: none;
+    }
+
+    /* Use a condensed mobile menu */
+    .site-navigation {
+        background: #26231e;
+        width: 100%;
+    }
+
+    .site-navigation a {
+        color: #cacabc;
+    }
+
+    .menu-toggle {
+        background: #363431;
+        border-bottom: 2px solid #787065;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        color: #eae9e6;
+        cursor: pointer;
+        display: block;
+        font-size: 21px;
+        font-size: 2.1rem;
+        line-height: 1.4;
+        margin: 0;
+        min-height: 5rem;
+        padding: 1.5rem 1.5rem;
+        position: relative;
+        z-index: 50;
+    }
+
+    /* Style menu items a bit differently */
+    .site-navigation .menu li {
+        border-top: 1px solid #787065;
+        display: block;
+        text-align: left;
+    }
 
 }
 
@@ -791,6 +855,38 @@ a:active {
     .site-branding {
         float: left;
         margin: 0.75rem 1rem 1rem 1.5rem;
+    }
+
+    /* Main menu is styled differently from mobile */
+    .menu-toggle {
+        display: none;
+    }
+
+    .site-navigation {
+        display: block;
+        float: right;
+        font-size: 16px;
+        font-size: 1.6rem;
+        margin: 0.75rem 2rem 0.5rem 1rem;
+        position: relative;
+    }
+
+    .site-navigation .menu > li {
+        display: inline-block;
+        line-height: 1;
+        margin: 0.25rem 0;
+        position: relative;
+    }
+
+    .site-navigation li a {
+        border-bottom: 2px solid transparent;
+        color: #787065;
+        padding: 1rem 1rem 0.8rem;
+    }
+
+    .site-navigation a:hover {
+        border-bottom: 2px solid #999;
+        color: #363431;
     }
 
 }
