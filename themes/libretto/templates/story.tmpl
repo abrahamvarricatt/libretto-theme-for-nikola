@@ -13,39 +13,16 @@
                 <a href="{{ abs_link(_link("root", None, lang)) }}" title="{{ blog_title|e }}" rel="home">{{ blog_title|e }}</a>
             </h1>
         </div>
-{#        <nav id="site-navigation" class="navigation-main" role="navigation">#}
-{#            <div class="menu-toggle">#}
-{#                <span class="mobile-site-title">Libretto</span>#}
-{#                <button id="menu-icon">#}
-{#                    <span></span>#}
-{#                    <span></span>#}
-{#                    <span></span>#}
-{#                </button>#}
-{#            </div>#}
-{#            <div class="menu-wrapper">#}
-{#                <div class="menu-main-menu-container">#}
-{#                    <ul id="menu-main-menu" class="menu">#}
-{#                        <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-37">#}
-{#                            <a href="https://www.google.com/">Home</a>#}
-{#                        </li>#}
-{#                        <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43">#}
-{#                            <a href="https://www.google.com/typography">Typography</a>#}
-{#                        </li>#}
-{#                        <li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54">#}
-{#                            <a href="#">Drop-down menu</a>#}
-{#                            <ul class="sub-menu">#}
-{#                                <li id="menu-item-42" class="menu-item menu-item-type-taxomony menu-item-object-category menu-item-42">#}
-{#                                    <a href="https://www.google.com/posts">Posts</a>#}
-{#                                </li>#}
-{#                                <li id="menu-item-55" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55">#}
-{#                                    <a href="https://www.google.com/instruments">Instruments</a>#}
-{#                                </li>#}
-{#                            </ul>#}
-{#                        </li>#}
-{#                    </ul>#}
-{#                </div>#}
-{#            </div>#}
-{#        </nav>#}
+        <nav class="site-navigation" role="navigation">
+            <div class="menu-toggle">
+                <span class="mobile-site-title">{{ blog_title|e }}</span>
+            </div>
+            <ul class="menu">
+                {% for url, text in navigation_links[lang] %}
+                    <li><a href="{{ url }}">{{ text }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
     </header>
 
 </body>
