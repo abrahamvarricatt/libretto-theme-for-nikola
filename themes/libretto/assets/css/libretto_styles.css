@@ -10,6 +10,8 @@
 6.0 Navigation
   6.1 Links
   6.2 Menus
+7.0 Content
+  7.1 Posts and pages
 14 Media Queries
   14.1 Phone-sized devices
   14.2 Tablets and up
@@ -746,6 +748,22 @@ body {
     margin: 0;
 }
 
+/* Style page title blocks */
+.title-block {
+    text-align: center;
+}
+
+.title-block h1 {
+    font-style: normal;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* If header image is not present */
+body:not(.libretto-has-header-image) .title-block {
+    margin: 2rem auto;
+    max-width: 680px;
+}
 
 /*--------------------------------------------------------------
 6.0 Navigation
@@ -797,6 +815,82 @@ a:active {
 
 
 /*--------------------------------------------------------------
+7.0 Content
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  7.1 Posts and pages
+--------------------------------------------------------------*/
+
+/* Post format icons, need title-block to work */
+.post-format-icon-pin:before {
+    content: "p";
+}
+
+.post-format-icon-star:before {
+    content: "y";
+}
+
+.post-format-icon-lock:before {
+    content: "w";
+}
+
+.post-format-icon-search:before {
+    content: "o";
+}
+
+.title-block:before {
+    background: #faf9f5;
+    border: 1px solid #d9d6d0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #faf9f5;
+    color: #a09a92;
+    display: inline-block;
+    font-family: libretto-icons;
+    font-size: 21px;
+    line-height: 21px;
+    margin: 1rem auto 2rem;
+    padding: 10px;
+    text-shadow: none;
+}
+
+.title-block {
+    border-bottom: 1px solid #d9d6d0;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.entry-meta {
+    color: #a09a92;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.entry-meta a {
+    color: #787065;
+}
+
+.title-block .entry-meta:before,
+.title-block .entry-meta:after {
+    color: #d9d6d0;
+    content: "~";
+    display: inline-block;
+    font-family: libretto-icons;
+    font-size: 24px;
+    margin: 0 0.25rem;
+    text-shadow: none;
+    vertical-align: -6px;
+}
+
+.title-block .entry-meta:after {
+    content: "`";
+    margin-left: -4px;
+}
+
+/*--------------------------------------------------------------
 14 Media Queries
 --------------------------------------------------------------*/
 
@@ -844,6 +938,26 @@ a:active {
         text-align: left;
     }
 
+    .title-block:before {
+        display: none;
+    }
+
+    .title-block {
+        margin-bottom: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .entry-meta {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+
+    .title-block h1 {
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
+
 }
 
 
@@ -887,6 +1001,11 @@ a:active {
     .site-navigation a:hover {
         border-bottom: 2px solid #999;
         color: #363431;
+    }
+
+    .title-block {
+        margin: 10rem auto 1.5rem;
+        display: block;
     }
 
 }
