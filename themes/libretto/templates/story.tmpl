@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        @font-face {
+            font-family: "libretto-icons";
+            src:url(/assets/fonts/libretto-icons.eot);
+            src:url(/assets/fonts/libretto-icons.eot?#iefix) format("embedded-opentype"),
+            url(/assets/fonts/libretto-icons.woff) format("woff"),
+            url(/assets/fonts/libretto-icons.ttf) format("truetype"),
+            url(/assets/fonts/libretto-icons.svg#libretto-icons) format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Libre+Baskerville|Montserrat|Playfair+Display">
     <link rel="stylesheet" href="/assets/css/libretto_styles.css">
 
@@ -19,11 +31,21 @@
             </div>
             <ul class="menu">
                 {% for url, text in navigation_links[lang] %}
-                    <li><a href="{{ url }}">{{ text }}</a></li>
+                    <li><a href="{{ url }}">{{ text|e }}</a></li>
                 {% endfor %}
             </ul>
         </nav>
     </header>
+
+    <!-- Page Header -->
+    <div class="title-block post-format-icon-star">
+        <div class="entry-meta">
+            <span class="posted-on">
+                Posted on <a href="{{ post.permalink() }}" rel="bookmark">{{ post.formatted_date('%B %-d, %Y')|e }}</a>
+            </span>
+        </div>
+        <h1>{{ post.title()|e }}</h1>
+    </div>
 
 </body>
 
