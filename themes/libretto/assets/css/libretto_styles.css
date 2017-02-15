@@ -7,6 +7,12 @@
 4.0 Forms
 5.0 Overall Site Structure
   5.1 Header
+6.0 Navigation
+  6.1 Links
+14 Media Queries
+  14.1 Phone-sized devices
+  14.2 Tablets and up
+  14.3 Desktops and big things
 
 --------------------------------------------------------------*/
 
@@ -716,19 +722,87 @@ body {
   5.1 Header
 --------------------------------------------------------------*/
 .nav-bar {
-  background: #fAf9f5;
-  border-bottom: 1px solid #d9d6d0;
-  /*position: relative;*/
-  /*width: 100%;*/
+    background: #fAf9f5;
+    border-bottom: 1px solid #d9d6d0;
+    position: relative;
+    width: 100%;
+}
+
+.nav-bar:after {
+    clear: both;
+    content: "";
+    display: block;
 }
 
 .site-branding h1 {
-  color: #a09a92;
-  font-family: "Playfair Display";
-  font-size: 36px;
-  font-size: 3.6rem;
-  font-style: normal;
-  /*font-weight: 700;*/
-  line-height: 1;
-  margin: 0;
+    color: #a09a92;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+6.0 Navigation
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  6.1 Links
+--------------------------------------------------------------*/
+a {
+    color: #932817;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #943526;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #712012;
+}
+
+
+/*--------------------------------------------------------------
+14 Media Queries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  14.1 Phone-sized devices
+--------------------------------------------------------------*/
+@media only screen and (max-width: 640px) {
+
+}
+
+
+/*--------------------------------------------------------------
+  14.2 Tablets and up
+--------------------------------------------------------------*/
+@media only screen and (min-width: 641px) {
+
+    .site-branding {
+        float: left;
+        margin: 0.75rem 1rem 1rem 1.5rem;
+    }
+
+}
+
+
+/*--------------------------------------------------------------
+  14.3 Desktops and big things
+--------------------------------------------------------------*/
+@media only screen and (min-width: 860px) {
+
+    .site-branding {
+        margin-left: 4rem;
+    }
+
 }

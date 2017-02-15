@@ -10,7 +10,7 @@
     <header class="nav-bar">
         <div class="site-branding">
             <h1 class="site-title">
-                <a href="{{ permalink }}" title="Libretto" rel="home">Libretto</a>
+                <a href="{{ abs_link(_link("root", None, lang)) }}" title="{{ blog_title|e }}" rel="home">{{ blog_title|e }}</a>
             </h1>
         </div>
 {#        <nav id="site-navigation" class="navigation-main" role="navigation">#}
