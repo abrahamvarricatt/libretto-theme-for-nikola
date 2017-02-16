@@ -1,1 +1,14 @@
 {% extends 'base.tmpl' %}
+
+{% block content_header %}
+    <div class="title-block post-format-icon-star">
+        <div class="entry-meta">
+            <span class="posted-on">
+                Posted on <a href="{{ post.permalink() }}" rel="bookmark">{{ post.formatted_date('%B %-d, %Y')|e }}</a>
+            </span>
+        </div>
+        <h1>{{ post.title()|e }}</h1>
+    </div>
+{% endblock %}
+
+

@@ -45,14 +45,9 @@
     </header>
 
     <!-- Page Header -->
-    <div class="title-block post-format-icon-star">
-        <div class="entry-meta">
-            <span class="posted-on">
-                Posted on <a href="{{ post.permalink() }}" rel="bookmark">{{ post.formatted_date('%B %-d, %Y')|e }}</a>
-            </span>
-        </div>
-        <h1>{{ post.title()|e }}</h1>
-    </div>
+    {% block content_header %}
+        <p> content - header </p>
+    {% endblock %}
 
     <!-- Page Content -->
     <div class="site-content" role="main">
