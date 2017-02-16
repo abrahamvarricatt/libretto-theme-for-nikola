@@ -28,7 +28,6 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/posts/index.html", "Blog"),
         ("/archive.html", "Archives"),
-        ("/categories/index.html", "Tags"),
         ("/rss.xml", "RSS feed"),
     ),
 }
