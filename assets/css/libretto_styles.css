@@ -973,30 +973,94 @@ a:active {
 --------------------------------------------------------------*/
 /* Main site navigation (most code is within media queries) */
 .site-navigation {
-  border-top: none;
+    border-top: none;
 }
 
 .site-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0 5px 0 0;
+    list-style: none;
+    margin: 0;
+    padding: 0 5px 0 0;
 }
 
 .site-navigation .menu li {
-  margin: 0;
+    margin: 0;
 }
 
 .site-navigation a {
-  display: block;
-  padding: 1.5rem 1.5rem;
-  text-decoration: none;
+    display: block;
+    padding: 1.5rem 1.5rem;
+    text-decoration: none;
+}
+
+/* In-page or in-post navigation */
+.navigation-post {
+    line-height: 1.6;
+}
+
+.navigation-post .previous {
+    text-align: left;
+}
+
+.navigation-post .next {
+    text-align: right;
+}
+
+.navigation-post .previous a,
+.navigation-post .next a {
+    color: #a09a92;
+    display: block;
+    font-style: italic;
+    position: relative;
+}
+
+.previous .meta-nav,
+.next .meta-nav {
+    color: #787065;
+    display: block;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.previous .meta-nav a,
+.next .meta-nav a {
+    color: #787065;
+    display: inline;
+    font-style: normal;
+}
+
+.previous .meta-nav a:before,
+.next .meta-nav a:after,
+.previous a .meta-nav:before,
+.next a .meta-nav:after {
+    border: solid transparent 4px;
+    content: "";
+    display: inline-block;
+    height: 0;
+    margin: 0 0.5rem;
+    top: 0.8em;
+    width: 0;
+}
+
+.previous .meta-nav a:before,
+.previous a .meta-nav:before {
+    border-left: 0;
+    border-right-color: #a09a92;
+}
+
+.next .meta-nav a:after,
+.next a .meta-nav:after {
+    border-left-color: #a09a92;
+    border-right: 0;
 }
 
 
 /*--------------------------------------------------------------
 7.0 Content
 --------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
   7.1 Posts and pages
@@ -1106,6 +1170,46 @@ a:active {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* "Read more" link */
+.more,
+.more>a {
+    color: #a09a92;
+    display: inline-block;
+    font-family: "Playfair Display";
+    font-size: 21px;
+    font-size: 2.1rem;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: lowercase;
+    width: 100%;
+}
+
+.more>a:before,
+.more>a:after {
+    display: inline;
+    font-size: 1.5em;
+    font-style: normal;
+    padding: 0 10px;
+    vertical-align: -0.15em;
+}
+
+.more>a:before {
+    content: "{";
+}
+
+.more>a:after {
+    content: "}";
+}
+
+.more>a:hover {
+    color: #712012;
+}
+
+/* Different color for index titles */
+article .title-block h1 a {
+    color: #787065;
+}
 
 /*--------------------------------------------------------------
 8.0 Widgets
@@ -1273,6 +1377,23 @@ a:active {
         width: 100%;
     }
 
+    /* In-page navigation should be pretty simple */
+    .navigation-post .previous,
+    .navigation-post .next {
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navigation-post .previous {
+        border-bottom: 1px solid #d9d6d0;
+    }
+
+    .navigation-post .previous,
+    .navigation-post .next {
+        text-align: center;
+    }
+
 }
 
 
@@ -1350,6 +1471,23 @@ a:active {
     .social {
         float: right;
         line-height: 1;
+    }
+
+    /* In-page navigation can be arranged in floats and take up a bit more space */
+    .navigation-post {
+        border-top: 1px solid #d9d6d0;
+    }
+
+    .navigation-post .previous,
+    .navigation-post .next {
+        float: left;
+        margin: 2rem 0;
+        width: 50%;
+    }
+
+    .navigation-post .next {
+        border-left: 1px solid #d9d6d0;
+        min-height: 4.8rem;
     }
 
 }
