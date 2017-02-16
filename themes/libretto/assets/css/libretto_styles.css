@@ -997,7 +997,6 @@ a:active {
 7.0 Content
 --------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------
   7.1 Posts and pages
 --------------------------------------------------------------*/
@@ -1106,6 +1105,46 @@ a:active {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* "Read more" link */
+.more,
+.more>a {
+    color: #a09a92;
+    display: inline-block;
+    font-family: "Playfair Display";
+    font-size: 21px;
+    font-size: 2.1rem;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: lowercase;
+    width: 100%;
+}
+
+.more>a:before,
+.more>a:after {
+    display: inline;
+    font-size: 1.5em;
+    font-style: normal;
+    padding: 0 10px;
+    vertical-align: -0.15em;
+}
+
+.more>a:before {
+    content: "{";
+}
+
+.more>a:after {
+    content: "}";
+}
+
+.more>a:hover {
+    color: #712012;
+}
+
+/* Different color for index titles */
+article .title-block h1 a {
+    color: #787065;
+}
 
 /*--------------------------------------------------------------
 8.0 Widgets

@@ -44,14 +44,16 @@
         </nav>
     </header>
 
-    <!-- Page Header -->
-    {% block content_header %}
-        <p> content - header </p>
-    {% endblock %}
+    {% block center_section %}
+        <!-- Page Header -->
+        {% block content_header %}
+            <p> content - header </p>
+        {% endblock %}
 
-    <!-- Page Content -->
-    {% block content_post %}
-        <p> content - post </p>
+        <!-- Page Content -->
+        {% block content_post %}
+            <p> content - post </p>
+        {% endblock %}
     {% endblock %}
 
     <!-- Page Footer -->

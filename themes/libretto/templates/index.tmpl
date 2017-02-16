@@ -1,3 +1,25 @@
-<!DOCTYPE html>
-<html></html>
+{% extends 'base.tmpl' %}
 
+{% block center_section %}
+    {% for post in posts %}
+        <div class="site-content" role="main">
+            <article class="format-standard libretto-long-form">
+                <div class="title-block post-format-icon-pin">
+                    <div class="entry-meta">
+                        <span class="posted-on">
+                            Posted on <a href="{{ post.permalink() }}" rel="bookmark">{{ post.formatted_date('%B %-d, %Y')|e }}</a>
+                        </span>
+                    </div>
+                    <h1><a href="{{ post.permalink() }}">{{ post.title()|e }}</a></h1>
+                </div>
+                <div class="entry-content">
+                    {% if index_teasers %}
+                        {{ post.text(teaser_only=True) }}
+                    {% else %}
+                        {{ post.text(teaser_only=False) }}
+                    {% endif %}
+                </div>
+            </article>
+        </div>
+    {% endfor %}
+{% endblock %}
