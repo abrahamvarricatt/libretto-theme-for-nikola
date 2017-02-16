@@ -11,4 +11,14 @@
     </div>
 {% endblock %}
 
+{% block content_post %}
+    <div class="site-content" role="main">
+        <article class="format-standard libretto-long-form">
+            <div class="entry-content">
+                {{ post.text() }}
+            </div>
+        </article>
+    </div>
+{% endblock %}
+
 

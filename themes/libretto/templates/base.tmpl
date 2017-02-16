@@ -50,13 +50,9 @@
     {% endblock %}
 
     <!-- Page Content -->
-    <div class="site-content" role="main">
-        <article class="format-standard libretto-long-form">
-            <div class="entry-content">
-                {{ post.text() }}
-            </div>
-        </article>
-    </div>
+    {% block content_post %}
+        <p> content - post </p>
+    {% endblock %}
 
     <!-- Page Footer -->
     <section class="footer-sidebar clear" role="complementary">
