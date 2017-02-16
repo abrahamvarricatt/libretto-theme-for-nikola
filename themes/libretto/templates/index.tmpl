@@ -2,7 +2,7 @@
 
 {% block center_section %}
     {% for post in posts %}
-        <div class="site-content" role="main">
+        <div class="site-content">
             <article class="format-standard libretto-long-form">
                 <div class="title-block post-format-icon-pin">
                     <div class="entry-meta">
@@ -22,4 +22,28 @@
             </article>
         </div>
     {% endfor %}
+    <!-- Lower Navigation links -->
+    <nav class="site-content navigation-post" role="navigation">
+        {% if nextlink %}
+            <div class="previous">
+                <a href="{{ nextlink }}" rel="prev">
+                    <span class="meta-nav">Older Entries</span>{#  #}
+                </a>
+            </div>
+        {% else %}
+            <div class="previous">
+                <a href="/" rel="prev" onclick="return false;">
+                    <span class="meta-nav">No Older Entries</span>{#  #}
+                </a>
+            </div>
+        {% endif %}
+        {% if prevlink %}
+            <div class="next">
+                <a href="{{ prevlink }}" rel="next">
+                    <span class="meta-nav">Newer Entries</span>{#  #}
+                </a>
+            </div>
+        {% endif %}
+    </nav>
+
 {% endblock %}
