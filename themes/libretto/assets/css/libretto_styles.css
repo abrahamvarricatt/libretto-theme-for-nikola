@@ -12,6 +12,7 @@
   6.2 Menus
 7.0 Content
   7.1 Posts and pages
+8.0 Widgets
 11.0 Clearings
 14 Media Queries
   14.1 Phone-sized devices
@@ -722,10 +723,17 @@ body {
 }
 
 .site-content {
-  margin: 4rem auto;
-  max-width: 680px;
-  padding: 0;
-  width: auto;
+    margin: 4rem auto;
+    max-width: 680px;
+    padding: 0;
+    width: auto;
+}
+
+.widget {
+    margin: 4rem auto;
+    max-width: 680px;
+    padding: 0;
+    width: auto;
 }
 
 
@@ -937,9 +945,46 @@ a:active {
 
 
 /*--------------------------------------------------------------
+8.0 Widgets
+--------------------------------------------------------------*/
+
+.footer-sidebar {
+    background: #faf9f5;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 2rem 0 2rem 0;
+    width: 100%;
+}
+
+.footer-sidebar .widget-block {
+    font-size: 12px;
+    font-size: 1.2rem;
+    padding: 0rem 3rem;
+}
+
+.widget-title {
+    border-bottom: 1px solid #d9d6d0;
+    font-size: 14px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.widget-text {
+    color: #a09a92;
+    font-size: 1.1em;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
 11.0 Clearings
 --------------------------------------------------------------*/
 
+.clear:before,
+.clear:after,
 .entry-content:before,
 .entry-content:after,
 .site-content:before,
@@ -948,6 +993,7 @@ a:active {
     display: table;
 }
 
+.clear:after,
 .entry-content:after,
 .site-content:after {
     clear: both;

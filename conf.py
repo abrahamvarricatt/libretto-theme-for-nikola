@@ -3,7 +3,8 @@
 # Basic blog details
 BLOG_AUTHOR = "BLOG_AUTHOR"
 BLOG_TITLE = "Libretto"
-BLOG_DESCRIPTION = "BLOG_DESCRIPTION"
+BLOG_DESCRIPTION = "You can write a brief (or long!) description of your " \
+                   "blog here."
 SITE_URL = "https://note2self.abraham-v.com/libretto-theme-for-nikola/"
 BLOG_EMAIL = "no@email.here"
 TIMEZONE = "America/Toronto"
