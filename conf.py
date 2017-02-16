@@ -61,5 +61,6 @@ SOCIAL_BUTTONS_CODE = {
     'https://www.linkedin.com/in/abrahamvarricatt/',
     'https://github.com/abrahamvarricatt/',
     'http://www.facebook.com/',
+    'https://www.reddit.com/r/civ/',
 }
 
