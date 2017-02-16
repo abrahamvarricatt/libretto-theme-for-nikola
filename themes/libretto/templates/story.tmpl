@@ -66,6 +66,20 @@
         </div>
     </section>
 
+    <!-- Site Attributions -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="site-info">
+            <p>{{ content_footer }}</p>
+            <p>Powered by <a href="https://getnikola.com/">Nikola</a> using the <a href="https://note2self.abraham-v.com/libretto-theme-for-nikola/">Libretto theme</a>.</p>
+        </div>
+        <div class="social">
+            <ul class="menu">
+                {% for link in social_buttons_code %}
+                    <li><a href="{{ link }}"></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
