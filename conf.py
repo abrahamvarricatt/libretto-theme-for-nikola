@@ -29,6 +29,7 @@ NAVIGATION_LINKS = {
         ("/", "Home"),
         ("/posts/index.html", "Blog"),
         ("/archive.html", "Archives"),
+        ("/categories/index.html", "Tags"),
         ("/rss.xml", "RSS feed"),
     ),
 }
