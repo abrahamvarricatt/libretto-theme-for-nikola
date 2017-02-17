@@ -1,5 +1,6 @@
 .. title: The Eye of the World
 .. date: 1990-01-15
+.. tags: Robert Jordan, Paperback, Darrel K. Sweet
 
 The Eye of the World (abbreviated as tEotW or EotW by fans) is the first book
 of The Wheel of Time (WoT) fantasy series written by American author Robert

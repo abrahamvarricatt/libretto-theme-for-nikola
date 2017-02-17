@@ -1,5 +1,6 @@
 .. title: A Memory of Light
 .. date: 2013-01-08
+.. tags: Robert Jordan, Print, Brandon Sanderson, Michael Whelan
 
 A Memory of Light is the 14th and final book of the fantasy series The Wheel
 of Time, written by American authors Robert Jordan and Brandon Sanderson,

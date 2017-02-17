@@ -1,5 +1,6 @@
 .. title: The Shadow Rising
 .. date: 1992-09-15
+.. tags: Robert Jordan, Paperback, Darrel K. Sweet, Print
 
 The Shadow Rising (abbreviated as tSR by fans) is the fourth book in American
 author Robert Jordan's fantasy series The Wheel of Time. It was published by
