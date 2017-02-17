@@ -1,5 +1,6 @@
 .. title: Knife of Dreams
 .. date: 2005-10-11
+.. tags: Robert Jordan, Print, Darrel K. Sweet
 
 Knife of Dreams (abbreviated as KoD by fans) is the 11th novel in the fantasy
 series The Wheel of Time by American author Robert Jordan. It was published by

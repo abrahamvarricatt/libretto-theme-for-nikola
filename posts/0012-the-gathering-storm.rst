@@ -1,5 +1,6 @@
 .. title: The Gathering Storm
 .. date: 2009-10-27
+.. tags: Robert Jordan, Print, Darrel K. Sweet, Brandon Sanderson
 
 The Gathering Storm is the 12th book of the fantasy series The Wheel of Time.
 It was incomplete when its author, Robert Jordan, died on September 16, 2007,

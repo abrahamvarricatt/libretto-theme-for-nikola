@@ -6,11 +6,39 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/categories/brandon-sanderson.xml</loc>
+  <lastmod>2017-02-17T15:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/categories/darrel-k-sweet.xml</loc>
+  <lastmod>2017-02-17T15:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/categories/michael-whelan.xml</loc>
+  <lastmod>2017-02-17T15:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/categories/paperback.xml</loc>
+  <lastmod>2017-02-17T15:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/categories/print.xml</loc>
+  <lastmod>2017-02-17T15:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/categories/robert-jordan.xml</loc>
+  <lastmod>2017-02-17T15:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/categories/tyler-jacobson.xml</loc>
+  <lastmod>2017-02-17T15:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/rss.xml</loc>
-  <lastmod>2017-02-16T18:38:00Z</lastmod>
+  <lastmod>2017-02-17T15:14:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://note2self.abraham-v.com/libretto-theme-for-nikola/sitemap.xml</loc>
-  <lastmod>2017-02-17T00:50:00Z</lastmod>
+  <lastmod>2017-02-17T18:14:00Z</lastmod>
  </sitemap>
 </sitemapindex>

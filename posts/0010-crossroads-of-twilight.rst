@@ -1,5 +1,6 @@
 .. title: Crossroads of Twilight
 .. date: 2003-01-07
+.. tags: Robert Jordan, Darrel K. Sweet, Print
 
 Crossroads of Twilight is the tenth book of The Wheel of Time fantasy series
 written by American author Robert Jordan. It was published by Tor Books and
