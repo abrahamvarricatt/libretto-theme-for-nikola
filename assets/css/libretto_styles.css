@@ -1138,7 +1138,7 @@ a:active {
 }
 
 /* Drop cap and first line */
-.format-standard .entry-content div > p:not(.no-emphasis):first-of-type:first-letter {
+.format-standard .entry-content div:first-child > p:not(.no-emphasis):first-of-type:first-letter {
     color: #b7b1a9;
     display: inline-block;
     float: left;
@@ -1150,7 +1150,7 @@ a:active {
     margin: 6px 10px 0 -5px;
 }
 
-.format-standard .entry-content div > p:not(.no-emphasis):first-of-type:first-line {
+.format-standard .entry-content div:first-child > p:not(.no-emphasis):first-of-type:first-line {
     color: #787065;
     font-family: "Playfair Display SC";
     font-size: 1em;
@@ -1159,13 +1159,13 @@ a:active {
     letter-spacing: 1px;
 }
 
-.format-standard .entry-content div > p:not(.no-emphasis):first-of-type::after {
+.format-standard .entry-content div:first-child > p:not(.no-emphasis):first-of-type::after {
     clear: both;
     content: "";
     display: block;
 }
 
-.format-standard .entry-content div > p:not(.no-emphasis):first-of-type + p {
+.format-standard .entry-content div:first-child > p:not(.no-emphasis):first-of-type + p {
     clear: left;
 }
 
@@ -1456,7 +1456,7 @@ article .title-block h1 a {
     }
 
     /* Use a bigger drop cap */
-    .format-standard .entry-content div > p:not(.no-emphasis):first-of-type:first-letter {
+    .format-standard .entry-content div:first-child > p:not(.no-emphasis):first-of-type:first-letter {
         font-size: 121px;
         line-height: 70px;
         margin: 6px 10px 0 -5px;
