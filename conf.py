@@ -26,6 +26,7 @@ PAGES = (
 )
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/", "Home"),
         ("/posts/index.html", "Blog"),
         ("/archive.html", "Archives"),
         ("/rss.xml", "RSS feed"),
