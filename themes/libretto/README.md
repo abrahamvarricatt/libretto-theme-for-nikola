@@ -32,7 +32,7 @@ Github,
 Feel free to report any issues, make suggestions or even better - contribute!
 
 
-# Un-supported features (hopefully, temporary)
+# Un-supported features
 
 Here is a list of Nikola features (that I'm aware of) which are currently not
 supported with this theme,
