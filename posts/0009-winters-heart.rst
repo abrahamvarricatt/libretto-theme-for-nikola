@@ -1,5 +1,6 @@
 .. title: Winter's Heart
 .. date: 2000-11-07
+.. tags: Robert Jordan, Paperback, Print
 
 Winter's Heart is the ninth book of the Wheel of Time fantasy series written
 by American author Robert Jordan. It was published by Tor Books and released on

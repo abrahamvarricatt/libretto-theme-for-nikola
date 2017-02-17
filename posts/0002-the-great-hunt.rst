@@ -1,5 +1,6 @@
 .. title: The Great Hunt
 .. date: 1990-11-15
+.. tags: Robert Jordan, Paperback, Darrel K. Sweet, Print
 
 The Great Hunt (abbreviated as tGH by fans) is the second book of The Wheel of
 Time fantasy series written by American author Robert Jordan. It was published

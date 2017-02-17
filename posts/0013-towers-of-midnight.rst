@@ -1,5 +1,6 @@
 .. title: Towers of Midnight
 .. date: 2010-11-02
+.. tags: Brandon Sanderson, Print, Darrel K. Sweet
 
 Towers of Midnight by Robert Jordan and Brandon Sanderson, is the sequel to the
 novel The Gathering Storm, and the 13th book in the Wheel of Time series.

@@ -1,5 +1,6 @@
 .. title: The Path of Daggers
 .. date: 1998-10-20
+.. tags: Robert Jordan, Paperback, Darrel K. Sweet, Print
 
 The Path of Daggers (abbreviated as tPoD by fans) is the eighth book of The
 Wheel of Time fantasy series written by American author Robert Jordan. It was

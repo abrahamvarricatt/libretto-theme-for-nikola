@@ -1,5 +1,6 @@
 .. title: The Fires of Heaven
 .. date: 1993-10-15
+.. tags: Robert Jordan, Paperback, Darrel K. Sweet
 
 The Fires of Heaven (abbreviated as tFoH or FoH by fans) is the fifth book in
 American author Robert Jordan's fantasy series The Wheel of Time. It was

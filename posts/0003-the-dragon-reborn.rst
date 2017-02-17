@@ -1,5 +1,6 @@
 .. title: The Dragon Reborn
 .. date: 1991-10-15
+.. tags: Robert Jordan, Paperback, Darrel K. Sweet
 
 The Dragon Reborn (abbreviated as tDR by fans) is the third book of American
 author Robert Jordan's fantasy series The Wheel of Time. It was published by

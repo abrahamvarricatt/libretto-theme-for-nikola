@@ -1,5 +1,6 @@
 .. title: Lord of Chaos
 .. date: 1994-10-15
+.. tags: Robert Jordan, Paperback, Darrel K. Sweet, Print
 
 Lord of Chaos (abbreviated as LoC by fans) is the sixth book of The Wheel of
 Time fantasy series written by American author Robert Jordan.
